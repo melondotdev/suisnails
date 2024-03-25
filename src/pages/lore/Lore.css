@@ -1,0 +1,9 @@
+.lore {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #060b26;
+  font-family: "Open Sans", sans-serif;
+  z-index: 0;
+}

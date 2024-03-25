@@ -1,0 +1,159 @@
+.home {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #060b26;
+  font-family: "Open Sans", sans-serif;
+  z-index: 0;
+}
+
+.header-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  position: relative; /* Add this line */
+  overflow: hidden; /* Ensure the overflow is hidden to hide the snail when it goes beyond the container */
+}
+
+.neon-snail {
+  position: absolute;
+  bottom: 0; /* Adjust as needed to position at the bottom */
+  margin-bottom: -1.1rem;
+  width: 20% !important;
+  height: auto;
+  animation: slideInfinite 100s linear infinite; /* Adjust time as needed for slower movement */
+}
+
+@keyframes slideInfinite {
+  from {
+    transform: translateX(
+      300%
+      ); /* Start from the right, outside the container */
+    }
+    to {
+      transform: translateX(-300%); /* Move to the left, outside the container */
+    }
+  }
+  
+  .header-text {
+    position: absolute;
+    left: 0;
+    padding-left: 2rem;
+    text-align: left;
+    font-size: 2.5rem;
+    color: white;
+  }
+  
+  .header-text h1 {
+    margin-top: -25px;
+    margin-bottom: -25px;
+  }
+  
+  .gradient-text {
+    background-color: #f3ec78;
+    background-image: linear-gradient(45deg, #51c0f7, #0a4fff);
+    background-size: 100%;
+    background-clip: text; /* Standard property */
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+  }
+  
+  .buttons {
+    padding-top: 3rem;
+    display: flex;
+  }
+  
+  .home-button {
+    position: relative;
+    margin-right: 1rem;
+    height: 75%;
+    padding: 1rem 1.5rem;
+    font-size: 1.25rem; 
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    border-color: #0AAEFF;
+    transition: background-color 0.3s ease;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  .home-button:hover {
+    background-color: #0AAEFF;
+  }
+
+  .background {
+    width: 100%;
+    height: auto;
+    filter: brightness(50%);
+    
+    /* for webkit-based browsers */
+    -webkit-mask-image:
+    linear-gradient(to top, black 0%, black 100%),
+    linear-gradient(to top, transparent 0%, black 100%),
+    linear-gradient(to right, transparent 0%, black 100%),
+    linear-gradient(to bottom, transparent 0%, black 100%),
+    linear-gradient(to left, transparent 0%, black 100%);
+  -webkit-mask-position:
+    center,
+    top,
+    right,
+    bottom,
+    left;
+  -webkit-mask-size:
+    100% 100%,
+    100% 10px,
+    10px 100%,
+    100% 10px,
+    10px 100%;
+  -webkit-mask-repeat:
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat;
+   -webkit-mask-composite:
+    source-out,
+    source-over,
+    source-over,
+    source-over;
+    
+   /* for browsers which have implemented the official spec */
+  mask-image:
+    linear-gradient(to top, black 0%, black 100%),
+    linear-gradient(to top, transparent 0%, black 100%),
+    linear-gradient(to right, transparent 0%, black 100%),
+    linear-gradient(to bottom, transparent 0%, black 100%),
+    linear-gradient(to left, transparent 0%, black 100%);
+  mask-position:
+    center,
+    top,
+    right,
+    bottom,
+    left;
+  mask-size:
+    100% 100%,
+    100% 30px,
+    10px 100%,
+    100% 30px,
+    10px 100%;
+  mask-repeat:
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat;
+  mask-composite:
+    subtract,
+    add,
+    add,
+    add;
+}
