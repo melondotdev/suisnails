@@ -6,7 +6,6 @@ const About = () => {
   return (
     <div className="about">
       <Navbar />
-      <div className="bg-black"></div>
     </div>
   )
 }

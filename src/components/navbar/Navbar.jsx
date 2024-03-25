@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Tooltip } from "react-tooltip";
-import Logo from "../../assets/logo4.png";
 import "react-tooltip/dist/react-tooltip.css";
 import { Link, useLocation } from "react-router-dom";
 import * as FaIcons from "react-icons/fa";
@@ -23,11 +22,7 @@ const Navbar = () => {
           <FaIcons.FaBars onClick={showSidebar} />
         </Link>
         <Link to="/" className="navbar-logo">
-          <img
-            src={Logo}
-            alt="logo"
-            style={{ height: "150%", width: "auto" }}
-          ></img>
+          <span style={{color: "white", fontSize: "1.9rem"}}>SUI</span><span style={{color: "#0AAEFF", fontSize: "1.9rem"}}>SNAILS</span>
         </Link>
       </div>
       <div className={sidebar ? "nav-menu active" : "nav-menu"}>
@@ -45,7 +40,7 @@ const Navbar = () => {
             className="nav-menu-item"
             style={{ color: location.pathname === "/" ? "#0AAEFF" : "white" }}
             data-tooltip-id="home"
-            data-tooltip-content="Home"
+            data-tooltip-content="SS Home"
           >
             <IoIcons.IoHomeOutline />
           </Link>
@@ -56,7 +51,7 @@ const Navbar = () => {
               color: location.pathname === "/about" ? "#0AAEFF" : "white",
             }}
             data-tooltip-id="about"
-            data-tooltip-content="About"
+            data-tooltip-content="SS About"
           >
             <FaIcons.FaRegQuestionCircle />
           </Link>
@@ -67,7 +62,7 @@ const Navbar = () => {
               color: location.pathname === "/lore" ? "#0AAEFF" : "white",
             }}
             data-tooltip-id="lore"
-            data-tooltip-content="Lore"
+            data-tooltip-content="SS Lore"
           >
             <LuIcons.LuBookOpen />
           </Link>
@@ -92,9 +87,9 @@ const Navbar = () => {
             <RiIcons.RiDiscordLine />
           </a>
         </div>
-        <Tooltip id="home"/>
-        <Tooltip id="about"/>
-        <Tooltip id="lore" />
+        <Tooltip id="home" style={{fontSize: "1.5rem", marginTop: "-17px"}}/>
+        <Tooltip id="about" style={{fontSize: "1.5rem", marginTop: "-17px"}}/>
+        <Tooltip id="lore" style={{fontSize: "1.5rem", marginTop: "-17px"}}/>
       </div>
       <div className="navbar-right">
         <button className="wallet-connect-button">Connect</button>

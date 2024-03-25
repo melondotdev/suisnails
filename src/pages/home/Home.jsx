@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import Navbar from "../../components/navbar/Navbar";
 import BackgroundImage from "../../assets/background5.png";
 import NeonSnail from "../../assets/neon-snail.png";
+import Creed1 from "../../assets/Creed1.png";
+import Creed2 from "../../assets/Creed2.png";
 import "./Home.css";
 import { useScramble } from "use-scramble";
 
@@ -33,13 +35,30 @@ const Home = () => {
         <img src={BackgroundImage} alt="background" className="background" />
         <img src={NeonSnail} alt="neonsnail" className="neon-snail" />
         <div className="header-text">
-          <h1 style={{fontWeight: "700"}}>Unlock Your</h1>
-          <h1 className="gradient-text" style={{fontWeight: "700"}} ref={ref}>''</h1>
-          <h1 style={{fontWeight: "700"}}>...With Snails?</h1>
+          <h1>Unlock Your</h1>
+          <h1 className="gradient-text" ref={ref}>''</h1>
+          <h1>...With Snails?</h1>
           <div className="buttons">
-            <button className="home-button" style={{backgroundColor: "#0AAEFF", color: "black", fontWeight: "500"}}>Launch App</button>
-            <button className="home-button" style={{fontWeight: "500"}}>Documentation</button>
+            <button className="home-button1">Launch App</button>
+            <button className="home-button2">Documentation</button>
           </div>
+        </div>
+      </div>
+      <div className="content-container">
+        <h1>The <span style={{color: "white", fontSize: "3rem"}}>SUI</span><span style={{color: "#0AAEFF", fontSize: "3rem"}}>SNAILS</span> Creed</h1>
+        <div className="content-item">
+          <img src={Creed1} alt="one" style={{maxWidth: "15rem"}}></img>
+          <div className="content-text">
+            <h1 style={{paddingLeft: "2rem"}}>HODL Onto Your Shell</h1>
+            <p style={{paddingLeft: "2rem", marginTop: "-1.5rem"}}>Abandoning your shell means death. Keep on back at all times. Absolutely NO selling or trading shells. <span style={{color: "#0AAEFF", fontSize: "1.5rem"}}>Take off shell</span> = <span style={{color: "#0AAEFF", fontSize: "1.5rem"}}>-1 HP.</span></p>
+          </div>
+        </div>
+        <div className="content-item">
+          <div className="content-text">
+            <h1 style={{paddingLeft: "2rem"}}>Live Long and Prosper</h1>
+            <p style={{paddingLeft: "2rem", marginTop: "-1.5rem"}}>All <span style={{color: "white", fontSize: "1.5rem"}}>SUI</span><span style={{color: "#0AAEFF", fontSize: "1.5rem"}}>SNAILS</span> are entitled to a share of the <span style={{color: "white", fontSize: "1.5rem"}}>WHIRL</span><span style={{color: "#0AAEFF", fontSize: "1.5rem"}}>POOL</span>, but only those with full HP will get their full share.</p>
+          </div>
+          <img src={Creed2} alt="two" style={{maxWidth: "15rem"}}></img>
         </div>
       </div>
     </div>

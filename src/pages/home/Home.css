@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: start;
   background-color: #060b26;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Anton", sans-serif;
   z-index: 0;
 }
 
@@ -73,22 +73,41 @@
     display: flex;
   }
   
-  .home-button {
+  .home-button1 {
     position: relative;
     margin-right: 1rem;
     height: 75%;
-    padding: 1rem 1.5rem;
-    font-size: 1.25rem; 
-    background-color: transparent;
+    padding: 0.75rem 1.5rem;
+    font-size: 2rem; 
+    background-color: #0AAEFF;
+    color: black;
+    cursor: pointer;
+    border-radius: 10px;
+    border-color: #0AAEFF;
+    transition: background-color 0.3s ease;
+    font-family: "Anton", sans-serif;
+  }
+  
+  .home-button1:hover {
+    background-color: #69cdff;
+  }
+  
+  .home-button2 {
+    position: relative;
+    margin-right: 1rem;
+    height: 75%;
+    padding: 0.75rem 1.5rem;
+    font-size: 2rem; 
+    background-color: rgba(0,0,0,0.5);
     color: white;
     cursor: pointer;
     border-radius: 10px;
     border-color: #0AAEFF;
     transition: background-color 0.3s ease;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Anton", sans-serif;
   }
   
-  .home-button:hover {
+  .home-button2:hover {
     background-color: #0AAEFF;
   }
 
@@ -143,10 +162,10 @@
     left;
   mask-size:
     100% 100%,
-    100% 30px,
-    30px 100%,
-    100% 30px,
-    30px 100%;
+    100% 20px,
+    20px 100%,
+    100% 20px,
+    20px 100%;
   mask-repeat:
     no-repeat,
     no-repeat,
@@ -158,4 +177,39 @@
     add,
     add,
     add;
+}
+
+.content-container {
+  width: 1200px;
+  padding-top: 650px;
+  padding-left: 2rem;
+  text-align: left;
+  justify-content: space-between;
+  left: 0;
+  right: 0;
+}
+
+.content-container h1 {
+  color: white;
+  font-size: 3rem;
+}
+
+.content-item {
+  width: 1000px;
+  border-top: 2px solid rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+}
+
+.context-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+p {
+  font-size: 1.5rem;
+  font-weight: 100;
+  color: white;
+  font-family: 'Open Sans',  sans-serif
 }
