@@ -181,7 +181,6 @@
 
 .content-container {
   width: 1200px;
-  padding-top: 650px;
   padding-left: 2rem;
   text-align: left;
   justify-content: space-between;
@@ -196,7 +195,6 @@
 
 .content-item {
   width: 1000px;
-  border-top: 2px solid rgba(255, 255, 255, 0.5);
   display: flex;
   align-items: center;
 }

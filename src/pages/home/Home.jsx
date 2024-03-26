@@ -4,6 +4,7 @@ import BackgroundImage from "../../assets/background5.png";
 import NeonSnail from "../../assets/neon-snail.png";
 import Creed1 from "../../assets/Creed1.png";
 import Creed2 from "../../assets/Creed2.png";
+import Creed3 from "../../assets/Creed3.png";
 import "./Home.css";
 import { useScramble } from "use-scramble";
 
@@ -44,9 +45,9 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="content-container">
+      <div className="content-container" style={{paddingTop:"650px"}}>
         <h1>The <span style={{color: "white", fontSize: "3rem"}}>SUI</span><span style={{color: "#0AAEFF", fontSize: "3rem"}}>SNAILS</span> Creed</h1>
-        <div className="content-item">
+        <div className="content-item" style={{borderTop: "2px solid rgba(255, 255, 255, 0.5)"}}>
           <img src={Creed1} alt="one" style={{maxWidth: "15rem"}}></img>
           <div className="content-text">
             <h1 style={{paddingLeft: "2rem"}}>HODL Onto Your Shell</h1>
@@ -60,6 +61,16 @@ const Home = () => {
           </div>
           <img src={Creed2} alt="two" style={{maxWidth: "15rem"}}></img>
         </div>
+        <div className="content-item">
+          <img src={Creed3} alt="two" style={{maxWidth: "15rem"}}></img>
+          <div className="content-text">
+            <h1 style={{paddingLeft: "2rem"}}>Enjoy Life in Shell City</h1>
+            <p style={{paddingLeft: "2rem", marginTop: "-1.5rem"}}>A vast number of ameneties will become available in the city over time, from DeFi protocols to dev tools to roguelite games.</p>
+          </div>
+        </div>
+      </div>
+      <div className="content-container" style={{paddingTop:"100px"}}>
+        <h1><span style={{color: "white", fontSize: "3rem"}}>SHELL</span><span style={{color: "#0AAEFF", fontSize: "3rem"}}>MAKERS</span></h1>
       </div>
     </div>
   );
