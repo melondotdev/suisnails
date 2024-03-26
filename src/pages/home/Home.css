@@ -180,7 +180,7 @@
 }
 
 .content-container {
-  width: 1200px;
+  width: 1400px;
   padding-left: 2rem;
   text-align: left;
   justify-content: space-between;
@@ -194,7 +194,7 @@
 }
 
 .content-item {
-  width: 1000px;
+  width: 1200px;
   display: flex;
   align-items: center;
 }
@@ -209,5 +209,10 @@ p {
   font-size: 1.5rem;
   font-weight: 100;
   color: white;
+  font-family: 'Open Sans',  sans-serif
+}
+
+.faq-section {
+  width: 1200px;
   font-family: 'Open Sans',  sans-serif
 }
