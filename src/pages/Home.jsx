@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useScramble } from "use-scramble";
+import { Tooltip } from "react-tooltip";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Faq from "react-faq-component";
@@ -89,8 +90,22 @@ const Home = () => {
           </h1>
           <h1 className="drop-shadow">In Shell City.</h1>
           <div className="buttons pt-7 flex text-5xl">
-            <button className="home-button1 drop-shadow relative mr-4 h-3/4 py-1 px-4 bg-ssblue text-black cursor-pointer rounded-xl border-ssblue border-2 ease-in-out duration-300 hover:bg-darkblue hover:text-white">Join Us</button>
-            <button className="home-button2 drop-shadow relative h-3/4 py-1 px-4 bg-transparent text-white cursor-pointer rounded-xl border-ssblue border-2 ease-in-out duration-300 hover:bg-ssblue">Learn More</button>
+          <a
+              href="https://discord.gg/4RjEjQ5AcG"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative mr-4 h-3/4 "
+            >
+              <button className="home-button1 drop-shadow py-1 px-4 bg-ssblue text-black cursor-pointer rounded-xl border-ssblue border-2 ease-in-out duration-300 hover:bg-darkblue hover:text-white">Join Us</button>
+            </a>
+            <button 
+              className="home-button2 drop-shadow relative h-3/4 py-1 px-4 bg-transparent text-white cursor-pointer rounded-xl border-ssblue border-2 ease-in-out duration-300 hover:bg-ssblue"
+              data-tooltip-id="whitepaper"
+              data-tooltip-content="Whitepaper Coming Soon"
+            >
+              Learn More
+            </button>
+            <Tooltip id="whitepaper" className='text-3xl'/>
           </div>
         </div>
       </div>

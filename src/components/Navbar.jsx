@@ -14,7 +14,7 @@ const Navbar = () => {
   const [sidebar, setSidebar] = useState(false);
 
   const showSidebar = () => setSidebar(!sidebar);
-
+  
   return (
     <div className="navbar flex justify-between items-center h-24 font-anton z-50 mt-3 text-3xl relative">
       <div className="navbar-left h-full flex justify-start items-center top-0 bottom-0 pt-1">
