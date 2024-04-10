@@ -1,9 +1,8 @@
-import './App.css';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from './pages/home/Home';
-import About from './pages/about/About';
-import Lore from './pages/lore/Lore';
-import Mint from './pages/mint/Mint';
+import Home from './pages/Home';
+import About from './pages/About';
+import Lore from './pages/Lore';
+import Mint from './pages/Mint';
 
 function App() {
   return (
