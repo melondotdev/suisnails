@@ -77,6 +77,7 @@ const Navbar = () => {
             data-tooltip-content="SnailMail"
           >
             <CiIcons.CiMail />
+          </a>
           <a
             href="https://lancer.suisnails.io/"
             target="_blank"
@@ -86,7 +87,6 @@ const Navbar = () => {
             data-tooltip-content="Lancer"
           >
             <GiIcons.GiStoneSpear />
-          </a>
           </a>
         </div>
         <div className="nav-menu-bottom flex flex-col items-center mb-8">
