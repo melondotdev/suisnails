@@ -47,9 +47,10 @@ const Home = () => {
       {
         title: <h1 className="text-4xl font-anton pb-2">What is the mission of this project?</h1>,
         content:
-          <p className="text-3xl pb-10">{`Sui Snails seek to build a booming metropolis that fundamentally shifts the nature of work from one 
-          that is tied up in corporate bureaucracy to one that is truly transparent and fairly rewarded.
-          Residents of Shell City will share in the prosperity of the economy as a whole.`}</p>,
+          <p className="text-3xl pb-10">{`We are creating tools and gamified web products to help build strong
+          communities in the Big Blue Sui. Our team is a strong believer that strong communities are the hallmark
+          of a successful chain. By achieving our mission, we will help to onboard new users, facilitate
+          long-term participation of existing users, and lead to a stronger ecosystem as a whole.`}</p>,
       },
       {
         title: <h1 className="text-4xl font-anton pb-2">Who is the team behind Sui Snails?</h1>,
