@@ -5,9 +5,10 @@ import { Link, useLocation } from "react-router-dom";
 import * as FaIcons from "react-icons/fa";
 // import * as LuIcons from "react-icons/lu";
 import * as IoIcons from "react-icons/io5";
+import * as CiIcons from "react-icons/ci";
 import * as RiIcons from "react-icons/ri";
 import * as AiIcons from "react-icons/ai";
-import * as BsIcons from "react-icons/bs";
+import * as GiIcons from "react-icons/gi";
 
 const Navbar = () => {
   const location = useLocation();
@@ -68,6 +69,15 @@ const Navbar = () => {
             <LuIcons.LuBookOpen />
           </Link> */}
           <a
+            href="https://mail.suisnails.io/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="nav-menu-item w-full p-4 ease-in-out duration-300 hover:text-ssblue"
+            data-tooltip-id="mail"
+            data-tooltip-content="SnailMail"
+          >
+            <CiIcons.CiMail />
+          <a
             href="https://lancer.suisnails.io/"
             target="_blank"
             rel="noopener noreferrer"
@@ -75,7 +85,8 @@ const Navbar = () => {
             data-tooltip-id="lancer"
             data-tooltip-content="Lancer"
           >
-            <BsIcons.BsSuitcaseLg />
+            <GiIcons.GiStoneSpear />
+          </a>
           </a>
         </div>
         <div className="nav-menu-bottom flex flex-col items-center mb-8">
@@ -97,6 +108,7 @@ const Navbar = () => {
           </a>
         </div>
         <Tooltip id="home" className='text-3xl'/>
+        <Tooltip id="mail" className='text-3xl'/>
         <Tooltip id="about" className='text-3xl'/>
         <Tooltip id="lore" className='text-3xl'/>
         <Tooltip id="lancer" className='text-3xl'/>
