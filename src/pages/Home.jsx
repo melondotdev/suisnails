@@ -45,17 +45,18 @@ const Home = () => {
     rows: [
       {
         title: <h1 className="text-xl font-anton pb-2">Who are the Sui Snails?</h1>,
-        content: <p className="text-base pb-8">{`Sui Snails are a collection of randomly generated NFTs that have been 
-        tasked with the mission to develop and expand Shell City, a newly founded metropolis 
-        on the Sui Blockchain.`}</p>,
+        content: <p className="text-base pb-8">{`Sui Snails are a collection of 1,111 randomly 
+        generated NFTs that have been tasked with the mission to develop and expand Shell City, 
+        a newly founded metropolis on the Sui Blockchain.`}</p>,
       },
       {
         title: <h1 className="text-xl font-anton pb-2">What is the mission of this project?</h1>,
         content:
-          <p className="text-base pb-10">{`We are creating tools and gamified web products to help build strong
-          communities in the Big Blue Sui. Our team is a strong believer that strong communities are the hallmark
-          of a successful chain. By achieving our mission, we will help to onboard new users, facilitate
-          long-term participation of existing users, and lead to a stronger ecosystem as a whole.`}</p>,
+          <p className="text-base pb-10">{`Our project seeks to enhance the world through gamification.
+          Our team is a strong believer that there are many aspects in our lives that can be made more
+          meaningful and enjoyable by employing human-focused design. By achieving our mission, we will 
+          help to onboard new users, facilitate long-term participation of existing users, and lead to 
+          a stronger ecosystem as a whole.`}</p>,
       },
       {
         title: <h1 className="text-xl font-anton pb-2">Who is the team behind Sui Snails?</h1>,
